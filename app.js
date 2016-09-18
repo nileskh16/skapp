@@ -7,15 +7,15 @@ angular.module('skapp', [])
     {
       $scope.items = $scope.name.split(',');
       if($scope.name == ""){
-            $scope.msg = "Please furnish apposite information.";
+            $scope.msg = "Please enter data first";
             disable();
       }
       else if($scope.items.length <= 3) {
-        $scope.msg = "You are on right track.";
+        $scope.msg = "Enjoy!";
         enable();
       }
       else if($scope.items.length > 3){
-        $scope.msg = "You are eating too much.";
+        $scope.msg = "Too Much!";
         enable();
      }
     };
